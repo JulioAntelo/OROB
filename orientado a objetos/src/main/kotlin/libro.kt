@@ -1,18 +1,8 @@
 class libro {
     var autor:String =""
-        get(){
-            return field
-        }
-        set(value) {
-            field = value
-        }
+
     var titulo:String =""
-        get(){
-            return field
-        }
-        set(value) {
-            field = value
-        }
+
     var puntuacion:Int = 5
         get() {
             if (field<5){
@@ -38,6 +28,8 @@ class libro {
                 else -> value
             }
         }
+
+
 
     fun imprimir_info(){
         println(" autor: $autor\n título: $titulo\n puntuacion: $puntuacion\n numero de paginas: $num_paginas ")
