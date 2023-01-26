@@ -192,14 +192,8 @@ class coche() {
 
 }
 
-class ConjuntoLibros {
-    var listalibros = mutableListOf<libro>()
-
-    init{
 
 
-    }
-}
 
 
 class rectangle (var base:Int, var altura:Int){
