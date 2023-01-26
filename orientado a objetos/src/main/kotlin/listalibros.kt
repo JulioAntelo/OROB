@@ -23,17 +23,4 @@ class Listalibros (nummaxlibros : Int ){
             listainicial.add(nuevolibro)
         }
     }
-
-    fun aniadir(libroactual){
-        listalibros.add(libroactual)
-    }
-    override fun toString(): String {
-        val cadenalibros ="\n"
-        for(libroactual in listalibros){
-            cadenalibros += libroactual.toString()+"\n"
-        }
-        return "Listalibros(listalibros=$listalibros, maxlibros=$maxLibros)"
-    }
-
-
 }
