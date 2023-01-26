@@ -1,4 +1,4 @@
-class libro {
+class libro (autor:String, titulo:String, puntuacion:Int, num_paginas:Int){
     var autor:String =""
 
     var titulo:String =""
@@ -46,4 +46,6 @@ class libro {
         }
     }
 
+
+    constructor(otrolibro:libro):this(otrolibro.titulo,otrolibro.autor,otrolibro.num_paginas,otrolibro.puntuacion)
 }
