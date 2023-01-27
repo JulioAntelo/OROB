@@ -1,5 +1,38 @@
 fun main(args: Array<String>) {
-    var libro1 = libro(    "petete",
+
+    val miBaraja=Baraja()
+    miBaraja.mostrar()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   var libro1 = libro(    "petete",
             "el libro gordo",
             7,
              345)
@@ -28,8 +61,7 @@ fun main(args: Array<String>) {
         seleccion = readLine()!!.toInt()
     }
 
-
-
+*/
 }
 
 
