@@ -38,7 +38,6 @@ fun main(args: Array<String>) {
 
 
 
-
 /*   var libro1 = libro(    "petete",
             "el libro gordo",
             7,

@@ -21,7 +21,7 @@ class rectangle (var base:Int, var altura:Int){
 class Tiempo(var horas:Int, var minutos:Int, var segundos:Int) {
 
     init {
-        require(horas in 0..23){"hora erronea"}
+        require(horas in 0..23){"Tiempo.hora erronea"}
         require(minutos in 0..60){"minutos erroneos"}
         require(segundos in 0..60){"segundos erroneos"}
 
@@ -34,6 +34,6 @@ class Tiempo(var horas:Int, var minutos:Int, var segundos:Int) {
 
     }
     override fun toString(): String {
-        return "reloj: $horas horas $minutos minutos $segundos segundos"
+        return "Tiempo.reloj: $horas horas $minutos minutos $segundos segundos"
     }
 }
