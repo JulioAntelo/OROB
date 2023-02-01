@@ -90,5 +90,8 @@ class Mano (tamañoinicial:Int){
         tamaño=listaCartas.size
 
     }
+    fun imprimirGithub(){
+    println("Prueba de cambios GitHub")
+    }
 }
 
