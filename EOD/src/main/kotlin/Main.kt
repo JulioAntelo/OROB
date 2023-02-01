@@ -2,8 +2,8 @@ fun main(args: Array<String>) {
 
 
 
-    val m = Mano(3)
-    val m2 = Mano(3)
+    val m = Mano(5)
+    val m2 = Mano(5)
     m.manoGanadora(m2)
     //println(m.listaCartas)
 
