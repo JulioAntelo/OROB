@@ -3,8 +3,10 @@ fun main(args: Array<String>) {
 
 
     val m = Mano(3)
+    val m2 = Mano(3)
+    m.manoGanadora(m2)
     //println(m.listaCartas)
-    m.mostrarMano()
+
     /*
     println(m.obtenerTamaño())
     m.mostrarCarta(1)
@@ -17,13 +19,10 @@ fun main(args: Array<String>) {
     cartaNueva.numero=3
     m.mostrarCarta(1)
     */
-    println("mano 2")
 
-    val m2 = Mano(3)
-    m2.mostrarMano()
-    println("ganadora")
 
-    m.manoGanadora(m2)
+
+
 
 
 }
