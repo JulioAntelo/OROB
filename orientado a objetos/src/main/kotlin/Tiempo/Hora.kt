@@ -16,17 +16,42 @@ class hora(horas:Int, minutos:Int, segundos:Int) {
     }
 
     constructor():this(0,0,0)
-    }
-
 
     fun setSegundos(horas: Int,minutos: Int,segundos: Int){
-        if (segundos>=60) minutos += segundos/60
+        if (segundos>=60){
+            minuto += segundos/60
+            segundo = segundos%60
+            hora += minutos/60
+            minuto = minutos%60
+        }
     }
 
     fun setMinutos(horas: Int,minutos: Int){
-        if (minutos>=60) horas += minutos/60
+        if (minutos>=60){
+            hora += minutos/60
+            minuto = minutos%60
+        }
     }
 
     fun setHoras(horas: Int){
-        if (horas>=25) horas = horas-1
+        if (horas>=25) hora % 24
     }
+
+    fun mostrarhora12(){
+        if (hora>12){
+            hora = hora-12
+            println("son las $hora horas, $minuto minutos, $segundo segundos, de la tarded")
+        }
+        else{
+            println("son las $hora horas, $minuto minutos, $segundo segundos, de la mañana")
+
+        }
+    }
+
+    override fun toString(): String {
+        return "son las $hora horas , $minuto minutos, $segundo segundos"
+    }
+
+
+}
+
