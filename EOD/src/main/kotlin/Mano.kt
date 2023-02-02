@@ -91,7 +91,7 @@ class Mano (tamañoinicial:Int){
 
     }
     fun imprimirGithub(){
-        println("Prueba de cambios GitHub")
+    println("Prueba de cambios GitHub")
     }
 }
 
