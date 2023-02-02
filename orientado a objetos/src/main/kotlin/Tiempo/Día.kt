@@ -14,5 +14,19 @@ class Día (Temp_Max_Día: Int, Temp_Min_Día:Int, Estado_Día:String){
             return field
         }
 
+    fun Mostrar_Predicción(){
+        var Mostrar_estado = ""
+        when {
+            Estado == "S" -> Mostrar_estado = "Soleado"
+            Estado == "N" -> Mostrar_estado = "Nublado"
+            Estado == "L" -> Mostrar_estado = "Luvioso"
+        }
+        println("Se espera un día $Mostrar_estado con temperaturas máximas de $Temperatura_Máxima y mínimas de $Temperatura_Mínima")
+    }
 
+    fun Temperatura_Actual(){
+        var Temp_Actual = readLine()!!.toInt()
+        if (Temp_Actual>Temperatura_Máxima) Temperatura_Máxima=Temp_Actual
+        if (Temp_Actual<Temperatura_Mínima) Temperatura_Mínima=Temp_Actual
+    }
 }
