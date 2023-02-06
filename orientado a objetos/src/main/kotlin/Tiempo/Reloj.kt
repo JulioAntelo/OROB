@@ -1,4 +1,4 @@
-class reloj {
+class main {
     var hora1 = hora(10,23,23)
     fun main() {
         println("Reloj \n " +
