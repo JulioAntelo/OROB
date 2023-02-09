@@ -1,5 +1,5 @@
 fun main(args: Array<String>) {
-    var hora1 = Reloj(11, 58, 12)
+    var hora1 = Reloj(18,35,23)
     hora1.añadir1000()
 }
 

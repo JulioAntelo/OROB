@@ -1,0 +1,4 @@
+package Restaurante
+
+class Main {
+}
