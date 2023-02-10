@@ -1,6 +1,6 @@
 package Restaurante
 
-class Menú ( IVA:Double =0.21,  Descuento:Float,  Bebidas:String,Principal:String, Postre:String){
+class Menú(IVA:Double =0.21, Descuento: Double, Principal:String, Bebidas:String, Postre:String){
     val Iva = IVA
     var descuento = Descuento
     var principal = Principal
