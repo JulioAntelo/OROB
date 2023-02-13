@@ -1,4 +1,4 @@
 package Cartas
 
-class CartaGenerica {
+abstract class CartaGenerica {
 }

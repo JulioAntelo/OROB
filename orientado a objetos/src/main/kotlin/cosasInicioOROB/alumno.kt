@@ -1,4 +1,6 @@
-class alumno( dni:String, edad:Int) {
+package cosasInicioOROB
+
+class alumno(dni:String, edad:Int) {
     var nota_trimestre1 = -1
         get() :Int{
             return field
@@ -53,7 +55,7 @@ class alumno( dni:String, edad:Int) {
     }
 
     override fun toString(): String {
-        return  "alumno(dni: $dni , edad: $edad, notatrimestre1: $nota_trimestre1, notatrimestre2: $nota_trimestre2, notatrimestre3: $nota_trimestre3)"
+        return  "cosasInicioOROB.alumno(dni: $dni , edad: $edad, notatrimestre1: $nota_trimestre1, notatrimestre2: $nota_trimestre2, notatrimestre3: $nota_trimestre3)"
     }
     fun informe_alumno(){
         print("${toString()} la media es: ${nota_final()}")

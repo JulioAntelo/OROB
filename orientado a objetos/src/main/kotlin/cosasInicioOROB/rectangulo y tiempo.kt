@@ -1,3 +1,5 @@
+package cosasInicioOROB
+
 class rectangle (var base:Int, var altura:Int){
 
     fun imprimir(){
@@ -21,7 +23,7 @@ class rectangle (var base:Int, var altura:Int){
 class Tiempo(var horas:Int, var minutos:Int, var segundos:Int) {
 
     init {
-        require(horas in 0..23){"Tiempo.hora erronea"}
+        require(horas in 0..23){"cosasInicioOROB.Tiempo.hora erronea"}
         require(minutos in 0..60){"minutos erroneos"}
         require(segundos in 0..60){"segundos erroneos"}
 
@@ -34,6 +36,6 @@ class Tiempo(var horas:Int, var minutos:Int, var segundos:Int) {
 
     }
     override fun toString(): String {
-        return "Tiempo.reloj: $horas horas $minutos minutos $segundos segundos"
+        return "cosasInicioOROB.Tiempo.reloj: $horas horas $minutos minutos $segundos segundos"
     }
 }

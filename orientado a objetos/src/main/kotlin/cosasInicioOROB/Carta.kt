@@ -1,3 +1,5 @@
+package cosasInicioOROB
+
 class Carta(Minumero: Int, mipalo: Char) {
     var numero=Minumero
         set(value) {
@@ -82,13 +84,13 @@ fun numeroAPalo(n:Int):Char{
 }
 fun main(args: Array<String>) {
     /*
-    println("Carta numero 1:")
+    println("cosasInicioOROB.Carta numero 1:")
     val numero1 = readln().toInt()
     val palo1 = readLine()!!.uppercase()!![0]
-    val carta1 = Carta(numero1, palo1)
+    val carta1 = cosasInicioOROB.Carta(numero1, palo1)
     carta1.mostrarCarta()
 
-    val carta2=Carta(carta1)
+    val carta2=cosasInicioOROB.Carta(carta1)
     carta2.numero = 7
     carta2.palo = 'T'
     carta2.mostrarCarta()
@@ -99,11 +101,11 @@ fun main(args: Array<String>) {
     for (n in (1..13))
         for (p in (0..3)){
             /*
-            val c=Carta(n,numeroAPalo(p))
+            val c=cosasInicioOROB.Carta(n,cosasInicioOROB.numeroAPalo(p))
             listaCartas.add(c)
 
              */
-            listaCartas.add(Carta(n,numeroAPalo(p))  )
+            listaCartas.add(Carta(n, numeroAPalo(p))  )
         }
     for (cartadelaLista in listaCartas){
         cartadelaLista.mostrarCarta()
@@ -112,10 +114,10 @@ fun main(args: Array<String>) {
 
 
     /*
-    println("Carta numero 2:")
+    println("cosasInicioOROB.Carta numero 2:")
     val numero2 = readln().toInt()
     val palo2 = readLine()!!.uppercase()!![0]
-    val carta2 = Carta(numero2)
+    val carta2 = cosasInicioOROB.Carta(numero2)
     println(carta2.mostrarCarta(numero2, palo2))
     println(carta1.compararCarta(numero2, palo2))
     */

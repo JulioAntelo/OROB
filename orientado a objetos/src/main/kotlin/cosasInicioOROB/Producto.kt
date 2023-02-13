@@ -1,3 +1,5 @@
+package cosasInicioOROB
+
 import kotlin.random.Random
 
 class Producto (nombre:String, serie:Int, Precio:Double) {
@@ -15,7 +17,7 @@ class Producto (nombre:String, serie:Int, Precio:Double) {
 
     var random = Random(1)
     override fun toString(): String {
-        return "Producto(name='$name', serie=$serie, precio=$precio, random=$random)"
+        return "cosasInicioOROB.Producto(name='$name', serie=$serie, precio=$precio, random=$random)"
     }
 
 

@@ -1,3 +1,5 @@
+package cosasInicioOROB
+
 class libro (autor:String, titulo:String, puntuacion:Int, num_paginas:Int){
     var autor:String =""
 
@@ -47,5 +49,5 @@ class libro (autor:String, titulo:String, puntuacion:Int, num_paginas:Int){
     }
 
 
-    constructor(otrolibro:libro):this(otrolibro.titulo,otrolibro.autor,otrolibro.num_paginas,otrolibro.puntuacion)
+    constructor(otrolibro: libro):this(otrolibro.titulo,otrolibro.autor,otrolibro.num_paginas,otrolibro.puntuacion)
 }
