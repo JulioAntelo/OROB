@@ -1,0 +1,4 @@
+package Cartas
+
+class CartaGenerica {
+}
