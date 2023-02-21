@@ -78,8 +78,8 @@ class refactorizar {
         var count = 0f
         var sum = 0f
         for (j in control.indices) {
-            if (i < calificaciones()[j] && i + 1 >= calificaciones()[j]) {
-                sum += calificaciones()[j]
+            if (i < calificaciones() && i + 1 >= calificaciones()) {
+                sum += calificaciones()
                 count += 1
             }
         }
@@ -108,6 +108,18 @@ class refactorizar {
         }
     }
     }
+}
+
+private operator fun Unit.compareTo(i: Int): Int {
+    TODO("Not yet implemented")
+}
+
+private operator fun Float.plusAssign(calificaciones: Unit) {
+    TODO("Not yet implemented")
+}
+
+private operator fun Int.compareTo(calificaciones: Unit): Int {
+    TODO("Not yet implemented")
 }
 
 
