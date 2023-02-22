@@ -12,8 +12,8 @@ class refactorizar {
     fun notas(){
     for (i in control.indices) {
         control[i] = (1..10).random()
+        }
     }
-}
 
 // Busca la nota más alta
     fun buscarMayor(control: Array<Int>): Int {
@@ -32,24 +32,24 @@ class refactorizar {
             minNota = preEval
             postEval = preEval
             indMinNota = i + 1
+            }
         }
-    }
     }
 
     // Crea una lista de los alumnos de la clase
     fun listaClase(){
-    val listaClase = IntArray(numAlumnos) { it + 1 }
-    val notas: List<Int> = control.toList()
+        val listaClase = IntArray(numAlumnos) { it + 1 }
+        val notas: List<Int> = control.toList()
     }
 
 // Comprueba el resultado del ejercicio
     fun comprobarReslutado(){
-    println("Mínimo es: $minNota")
-    println("Máximo es: $maxNota")
-    println("Indice del mínimo es: $indMinNota")
-    println("Indice del máximo es: $indMaxNota")
-    println("Lista de clase: ${listaClase()}")
-    println("Array de Notas: ${notas()}")
+        println("Mínimo es: $minNota")
+        println("Máximo es: $maxNota")
+        println("Indice del mínimo es: $indMinNota")
+        println("Indice del máximo es: $indMaxNota")
+        println("Lista de clase: ${listaClase()}")
+        println("Array de Notas: ${notas()}")
     }
 
     // Crea el array de notas "practicas"
@@ -74,39 +74,39 @@ class refactorizar {
 // Hacemos un array de 10 para la estadística.
     val estadistica = FloatArray(10)
     fun estadistica(){
-    for (i in 0..9) {
-        var count = 0f
-        var sum = 0f
-        for (j in control.indices) {
-            if (i < calificaciones() && i + 1 >= calificaciones()) {
-                sum += calificaciones()
-                count += 1
+        for (i in 0..9) {
+            var count = 0f
+            var sum = 0f
+            for (j in control.indices) {
+                if (i < calificaciones() && i + 1 >= calificaciones()) {
+                    sum += calificaciones()
+                    count += 1
+                }
             }
-        }
-        estadistica[i] = if (count != 0f) {
-            count / numAlumnos
-        } else {
-            0f
-        }
-        val sol = (Math.round(estadistica[i] * 10000.0) / 100.0).toDouble()
-        println("Estadística nota tramo <= ${i + 1} = $sol%")
+            estadistica[i] = if (count != 0f) {
+                count / numAlumnos
+            } else {
+                0f
+            }
+            val sol = (Math.round(estadistica[i] * 10000.0) / 100.0).toDouble()
+            println("Estadística nota tramo <= ${i + 1} = $sol%")
         }
     }
 
     // Aprobados y suspensos
     fun aprobados_suspensos(){
-    val aprobados = IntArray(numAlumnos)
-    val suspensos = IntArray(numAlumnos)
-    var countAprobados = 0
-    var countSuspensos = 0
-    for (i in control.indices) {
-        if (calificaciones() < 5) {
-            aprobados[countAprobados] = i + 1
-            countAprobados++
-        } else {
-            suspensos[countSuspensos]
+        val aprobados = IntArray(numAlumnos)
+        val suspensos = IntArray(numAlumnos)
+        var countAprobados = 0
+        var countSuspensos = 0
+        for (i in control.indices) {
+            if (calificaciones() < 5) {
+                aprobados[countAprobados] = i + 1
+                countAprobados++
+            } else {
+                suspensos[countSuspensos]
+            }
         }
-    }
     }
 }
 
