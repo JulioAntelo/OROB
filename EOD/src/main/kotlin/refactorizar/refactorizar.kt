@@ -1,4 +1,4 @@
-package refactorizar.ejercicio_3
+package refactorizar
 
 private operator fun Unit.compareTo(i: Int): Int {
     TODO("Not yet implemented")

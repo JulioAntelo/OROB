@@ -1,4 +1,4 @@
-package refactorizar.ejercicio_3
+package refactorizar
 
 open class Trabajador(private var nombre: String, var nomina: Double) {
     public var horasExtras: Int = 0
