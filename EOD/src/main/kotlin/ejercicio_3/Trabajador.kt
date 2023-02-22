@@ -1,10 +1,10 @@
 package ejercicio_3
 
-open class Trabajador(private var nombre: String, var nomina: Float) {
+open class Trabajador(private var nombre: String, var nomina: Double) {
     public var horasExtras: Int = 0
 
-    open fun costoDelPersonal(): Float {
-        var costoFinal = 0f
+    open fun costoDelPersonal(): Double {
+        var costoFinal = 0.00
         costoFinal += nomina + (horasExtras * 20)
         return costoFinal
     }
