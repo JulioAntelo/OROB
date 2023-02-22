@@ -1,4 +1,4 @@
-package ejercicio_3
+package refactorizar.ejercicio_3
 
 
 class CostoPersonal {
