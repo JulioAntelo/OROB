@@ -1,10 +1,9 @@
 package Empresa_Alquiler_Vehiculos
 
-class Coche:VehiculoTransporte() {
+class Coche: VehiculoTransporte() {
     override fun recibo(){
         println("-----------------------")
         println("COCHE")
         println("-----------------------")
-        println(VehiculoTransporte.recibo)
     }
 }
