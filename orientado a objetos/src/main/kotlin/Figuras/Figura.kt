@@ -10,7 +10,7 @@ abstract class Figura {
 /*
 package Figuras
 
-fun main(args: Array<String>){
+fun Ejercicio_Compra_Online_AdrianLopez.main(args: Array<String>){
     val triangulo = Triangulo()
     println("Triangulo")
     triangulo.altura = 23.8
