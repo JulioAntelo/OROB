@@ -17,7 +17,7 @@ abstract class Product(RegInitialPrice:Double) {
     public var codigo:Int
     companion object{
         private val tramosiva = intArrayOf(0,4,10,21)
-        private var contador = 0
+        var contador = 0
     }
 
     init {
