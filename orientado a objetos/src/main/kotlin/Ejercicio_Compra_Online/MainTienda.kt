@@ -1,4 +1,4 @@
-package Ejercicio_Compra_Online_AdrianLopez
+package Ejercicio_Compra_Online
 
 import Book
 import MP3Player
