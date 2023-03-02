@@ -3,8 +3,27 @@ abstract class Product(RegInitialPrice:Double) {
 
    protected var regularPrice:Double
 
-   init {
+     var iva = 0
+         get():Int {
+             return field
+         }
+        set(value){
+            if(value !in tramosiva){
+                println("valor no valido")
+
+            }else
+                field = value
+        }
+    public var codigo:Int
+    companion object{
+        private val tramosiva = intArrayOf(0,4,10,21)
+        private var contador = 0
+    }
+
+    init {
        regularPrice=RegInitialPrice
+        codigo = contador
+        contador++
    }
 
     constructor():this(1.0){
@@ -16,22 +35,7 @@ abstract class Product(RegInitialPrice:Double) {
 
     abstract fun computeespecialcostumerPrice():Double
 
-    companion object Iva{
-        val iva = intArrayOf(0,4,10,21)
-        init {
-            println("Inicializando el companion")
-        }
-        fun IvaMenor():Int {
-            return iva[0]
-        }
-        fun IvaMeioMenor():Int {
-            return iva[1]
-        }
-        fun IvaMedioMayor():Int {
-            return iva[2]
-        }
-        fun IvaMayor():Int {
-            return iva[3]
-        }
+    fun mostrarContador():Int{
+        return contador
     }
 }

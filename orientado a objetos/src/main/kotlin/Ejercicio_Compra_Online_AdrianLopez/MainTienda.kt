@@ -3,6 +3,7 @@ package Ejercicio_Compra_Online_AdrianLopez
 import Book
 import MP3Player
 import Product
+import Product.Companion.contador
 import TV
 import TiendaOnline.Camera
 
@@ -30,5 +31,8 @@ fun main(){
        println()
    }
     print("El precio final de la compra es $preciocompra")
+    println(contador)
+
+
 
 }
