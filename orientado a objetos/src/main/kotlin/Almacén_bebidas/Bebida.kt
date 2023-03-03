@@ -38,7 +38,7 @@ open class Bebida (Identificador:Int,
             }else{field = value}
         }
 
-    fun Calcular(cantidad: Int): Double {
+    open fun Calcular(cantidad: Int): Double {
         return cantidad*PrecioBebida
     }
 }

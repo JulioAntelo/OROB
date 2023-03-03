@@ -11,5 +11,9 @@ class AguaMineral(Identificador:Int,
         marca) {
     val origen = Origen
 
+    override fun Calcular(cantidad: Int): Double {
+        return cantidad*PrecioBebida
+    }
+
 
 }

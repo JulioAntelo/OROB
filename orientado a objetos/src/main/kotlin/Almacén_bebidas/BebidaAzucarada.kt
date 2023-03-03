@@ -15,13 +15,12 @@ class BebidaAzucarada(Identificador:Int,
     var promocion = promocion
 
     fun Calcular(producto: Double, cantidad: Int): Double {
-        var PrecioBebidaPromo = 0.00
         if (promocion == true){
-             PrecioBebidaPromo= producto*cantidad*0.9
-            return PrecioBebidaPromo
+            PrecioBebida= producto*cantidad*0.9
+            return PrecioBebida
         }else {
-            PrecioBebidaPromo = producto*cantidad
-            return PrecioBebidaPromo
+            PrecioBebida = producto*cantidad
+            return PrecioBebida
         }
     }
 

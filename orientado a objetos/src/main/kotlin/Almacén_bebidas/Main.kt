@@ -9,6 +9,7 @@ fun Main(){
     val Fanta =BebidaAzucarada(3,2,1.30,"FantaNaranja",45,false)
     val Nestea = BebidaAzucarada(4,1,1.50,"Nestea",20,false)
     val Kas = BebidaAzucarada(5,2,1.40,"Kas",70,true)
+    val Agua = AguaMineral(6,2,1.00,"Si","Manantial")
 
 
     var menu = 0
