@@ -28,13 +28,18 @@ open class Bebida (Identificador:Int,
                 println("precio incorrecto")
             }else{field = value}
         }
-    val MarcaBebida = marca
+    var MarcaBebida = marca
         get():String {
             return field
         }
+        set(value) {
+            if (MarcaBebida.length<3){
+                println("la longitud es menor de la esperada")
+            }else{field = value}
+        }
 
-    open fun Calcular(Cantidad_prod: Double): Double {
-        return Cantidad_prod*PrecioBebida
+    fun Calcular(cantidad: Int): Double {
+        return cantidad*PrecioBebida
     }
 }
 

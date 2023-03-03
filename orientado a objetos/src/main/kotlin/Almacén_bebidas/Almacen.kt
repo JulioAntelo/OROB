@@ -6,4 +6,8 @@ class Almacen (){
     fun AniadirBebida(){
 
     }
+
+    fun Calcular(){
+
+    }
 }

@@ -14,7 +14,7 @@ class BebidaAzucarada(Identificador:Int,
     val porcentaje_azucar = porcentajeAzucar
     var promocion = promocion
 
-    fun Calcular(producto: Double, cantidad: Int, promocion: Boolean): Double {
+    fun Calcular(producto: Double, cantidad: Int): Double {
         var PrecioBebidaPromo = 0.00
         if (promocion == true){
              PrecioBebidaPromo= producto*cantidad*0.9
