@@ -26,13 +26,14 @@ fun main(){
         println("Producto borrado")
     }else{
         println("Producto no borrado")
-    }*/
+    }
 
-    Almacen1.recolocarBebida(5)
+   Almacen1.recolocarBebida(5)
 
     Almacen1.InformacionAlmacen()
 
     println("Precio total: ${Almacen1.PrecioTotal()}")
-
-
+*/
+    Almacen1.borrarMarca("Coca-cola")
+    Almacen1.InformacionAlmacen()
 }

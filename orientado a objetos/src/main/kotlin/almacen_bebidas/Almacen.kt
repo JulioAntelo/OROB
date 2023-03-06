@@ -141,5 +141,22 @@ class Almacen() {
         }
     }
 
+    fun borrarMarca(Marca:String) {
+        println()
+        println("........Borrando marca........")
+        println()
+        for ((k, Estanterias) in Estanterias) {
+            for (bebida in Estanterias) {
+                if (bebida.m == Marca) {
+                    EliminarProducto(bebida.ID)
+                    println("un producto de la marca dada ha sido eliminada")
+                    break
+                } else {
+                    println()
+                    println("no existe la marca dada dentro de las estanterias")
+                }
+            }
+        }
+    }
 
 }
