@@ -3,10 +3,10 @@ package Almacen
 abstract class Bebida {
 
     companion object{
-        private var identificador = 1
+        private var contador = 1
     }
 
-    var ID:Int = identificador
+    var ID:Int = contador
 
     var L:Double = 0.0
         set(value){
@@ -46,16 +46,16 @@ abstract class Bebida {
 
 
     constructor(litros:Double, precio:Double, marca:String){
-        identificador ++
+        contador ++
         L = litros
         p = precio
         m = marca
     }
-
+/*
     constructor(bebida: Bebida) : this(bebida.L, bebida.p, bebida.m) {
         this.ID = bebida.ID
     }
-
+*/
     open fun Calcular(cant_prod:Int):Double{
         val total= cant_prod * this.p
         return total

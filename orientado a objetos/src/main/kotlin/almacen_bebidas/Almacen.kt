@@ -17,7 +17,7 @@ class Almacen() {
         var preciototal = 0.0
         for ((key,value )in Estanterias){
             for (bebida in value){
-                preciototal += bebida.p
+                preciototal += bebida.Calcular(1)
             }
         }
         return preciototal
@@ -35,15 +35,14 @@ class Almacen() {
         return preciomarca
     }
 
-    fun PrecioEstanteria(Estanteria:Int):Double{
+    fun PrecioEstanteria(numeroEstanteria:Int):Double{
         var precioestanteria:Double = 0.0
-        for ((key,value )in Estanterias){
-            if (key == Estanteria){
-                for (bebida in value){
-                    precioestanteria += bebida.p
+        val listaBebidasEstanteriaActual = Estanterias[numeroEstanteria]
+                if (listaBebidasEstanteriaActual != null) {
+                    for (bebida in listaBebidasEstanteriaActual) {
+                        precioestanteria += bebida.p
+                    }
                 }
-            }
-        }
         return precioestanteria
     }
 
