@@ -38,8 +38,8 @@ class Compra (lista:MutableList<Producto>){
     }
     fun comprarProducto(producto: Producto){
         println("Dime la cantidad que quieres comprar:")
-        var cant= readln().toInt()
-        var lineaTemp=LineaCompra(cant,producto)
+        var cantidad= readln().toInt()
+        var lineaTemp=LineaCompra(cantidad,producto)
         listaPro.add(producto)
         listaCompra.add(lineaTemp)
 
