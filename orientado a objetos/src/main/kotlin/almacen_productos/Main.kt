@@ -1,4 +1,4 @@
-fun main() {
+fun Main() {
     val producto1=Producto("Azúcar",1.0)
     val producto2=Perecedero("Yogourt",2.0,5)
     val producto3=Noperecedero("Sal",1.5,"condimento")
