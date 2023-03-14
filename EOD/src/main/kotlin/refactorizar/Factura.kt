@@ -29,14 +29,8 @@ class Factura(private val listaCompra: List<Compra>) {
     companion object {
         fun main(args: Array<String>) {
             val listaC: MutableList<Compra> = ArrayList()
-            val c1 = CompraBuilder().setNombre("PC").setTipo(Compra.HARDWARE).setCantidad(2).setPrecio(1000).createCompra()
-            val c2 = CompraBuilder().setNombre("Antivirus").setTipo(Compra.SOFTWARE).setCantidad(1).setPrecio(150).createCompra()
-            val c3 = CompraBuilder().setNombre("Papel").setTipo(Compra.OTRO).setCantidad(5).setPrecio(3).createCompra()
-
+            var c1 = Compra("si",2,34,12.2)
             listaC.add(c1)
-            listaC.add(c2)
-            listaC.add(c3)
-
             val f = Factura(listaC)
             println(f.facturar())
         }
