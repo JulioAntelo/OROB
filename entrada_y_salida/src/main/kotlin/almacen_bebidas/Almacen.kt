@@ -1,4 +1,4 @@
-package Almacen
+package almacen_bebidas
 
 class Almacen() {
 
@@ -47,7 +47,7 @@ class Almacen() {
     }
 
 
-    fun AgregarProducto(Bebida:Bebida){
+    fun AgregarProducto(Bebida: Bebida){
         var EstanteriaMasVacia:MutableList<Bebida> = mutableListOf()
         var Confirmación = false
         for ((key,value) in Estanterias){

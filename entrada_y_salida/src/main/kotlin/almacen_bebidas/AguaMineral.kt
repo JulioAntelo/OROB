@@ -1,6 +1,6 @@
-package Almacen
+package almacen_bebidas
 
-class AguaMineral(litros:Double, precio:Double, marca:String, manantialOrigen:String):Bebida(litros, precio, marca) {
+class AguaMineral(litros:Double, precio:Double, marca:String, manantialOrigen:String): Bebida(litros, precio, marca) {
 
     var MOrigen: String = manantialOrigen
         set(value){

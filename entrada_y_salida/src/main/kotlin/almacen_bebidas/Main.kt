@@ -1,10 +1,12 @@
+package almacen_bebidas
+
 import java.io.File
 
 
 
 
 fun main(args: Array<String>) {
-
+/*
     fun parte1(){
         val salario: Double?
         print("Introduce un salario: ")
@@ -78,11 +80,7 @@ fun main(args: Array<String>) {
     println(str3)
     println(str4)
     println(str5)
-
-
-
-
-
+*/
 
 
 }

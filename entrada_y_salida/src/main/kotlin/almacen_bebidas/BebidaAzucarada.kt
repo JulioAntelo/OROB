@@ -1,6 +1,7 @@
-package Almacen
+package almacen_bebidas
 
-class BebidaAzucarada(litros:Double, precio:Double, marca:String, porcentajeAzucar:Double, var promocion: Boolean):Bebida(litros, precio, marca) {
+class BebidaAzucarada(litros:Double, precio:Double, marca:String, porcentajeAzucar:Double, var promocion: Boolean):
+    Bebida(litros, precio, marca) {
 
     var porazucar = porcentajeAzucar
         set(value){

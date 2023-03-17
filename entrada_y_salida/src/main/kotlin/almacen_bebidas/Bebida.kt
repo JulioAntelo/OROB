@@ -1,4 +1,4 @@
-package Almacen
+package almacen_bebidas
 
 abstract class Bebida {
 
