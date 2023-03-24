@@ -2,7 +2,6 @@ package ficheros
 
 import java.io.File
 import java.lang.Math.abs
-import java.util.*
 fun main(){
 
     val file = ("5_archivos/")
@@ -25,13 +24,6 @@ fun main(){
     println("------------")
     println(" ")
     filePathList.sortBy { it.lastModified() }
-
-    for(items in filePathList){
-
-        val ultimaModificacionFecha = Date(items.lastModified())
-
-        println("Nombre : ${items.name} Ultima modificacion : ${ultimaModificacionFecha}    ${items.lastModified()} ")
-    }
 
     var diferenciaMinima=abs(filePathList[0].lastModified()-filePathList[1].lastModified())
     var diferenciaActual=diferenciaMinima
