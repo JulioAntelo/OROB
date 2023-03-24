@@ -5,9 +5,6 @@ import java.lang.Math.abs
 import java.util.*
 fun main(){
 
-    var menu = 0
-
-    println("que desea hacer? Pulse: \n 1 si quiere borrar un fichero \n 2 si quiere crear un fichero \n 3 si quiere mover un fichero \n 4 si quiere cerrar el programa \n los ficheros son los siguientes:")
     val file = ("5_archivos/")
     val fileList = listOf("Ejercicios.pdf","hola.odt","Alumno.zip","sumadigitos.py","traslados.pdf")
     val filePathList = mutableListOf<File>()
