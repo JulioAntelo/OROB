@@ -33,7 +33,6 @@ fun main(){
         if (diferenciaActual<diferenciaMinima){
             diferenciaMinima= diferenciaActual
             posicionDiferenciaMinima=i
-
         }
     }
     println("cercanos")
@@ -53,6 +52,4 @@ fun main(){
     }
 
      */
-
-
 }
