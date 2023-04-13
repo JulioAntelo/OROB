@@ -1,15 +1,14 @@
 import java.io.File
-import java.util.*
 
 
 fun main(args: Array<String>) {
 
-    val documento = File("prueba/Documento.txt")
-    println(documento.absolutePath)
-    val milisegundos = documento.lastModified()
-    val fecha = Date(milisegundos)
-
-    println("Últimamodificación (ms)   : $milisegundos")
-    println("Últimamodificación (fecha): $fecha")
-    println("Tamañodel archivo: " + documento.length())
+    fun main(args: Array<String>) {
+        val file = File("C:\\Users\\usuario tarde\\Desktop\\cosas con el itellij\\entrada_y_salida" + File.separator + "patatas.txt")
+        val bufferedReader = file.bufferedReader()
+        val text: List<String> = bufferedReader.readLines()
+        for (line in text) {
+            println(line)
+        }
+    }
 }
