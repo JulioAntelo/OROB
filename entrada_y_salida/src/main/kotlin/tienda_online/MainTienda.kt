@@ -6,6 +6,8 @@ import Product
 import Product.Companion.contador
 import TV
 import TiendaOnline.Camera
+import java.io.File
+import java.io.FileWriter
 
 fun main(){
 
@@ -32,4 +34,11 @@ fun main(){
    }
     print("El precio final de la compra es $preciocompra")
     println(contador)
+
+
+    val archivo = File("C:\\Users\\usuario tarde\\Desktop\\cosas con el itellij\\entrada_y_salida\\cosas_de_tienda_online.txt")
+    val  escritor_archivos = FileWriter(archivo)
+    for (item in listacompra){
+
+    }
 }
