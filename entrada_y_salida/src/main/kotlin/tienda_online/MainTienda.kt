@@ -32,7 +32,4 @@ fun main(){
    }
     print("El precio final de la compra es $preciocompra")
     println(contador)
-
-
-
 }
