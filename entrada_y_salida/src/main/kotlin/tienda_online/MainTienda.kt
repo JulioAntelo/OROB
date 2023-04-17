@@ -45,6 +45,10 @@ fun main(){
         if (menu == 1){
 
         }
+        if (menu == 2){
+
+        }
+        if(menu==3) break
     }
 
 }
