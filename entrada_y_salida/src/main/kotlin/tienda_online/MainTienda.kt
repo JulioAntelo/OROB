@@ -38,7 +38,13 @@ fun main(){
 
     val archivo = File("C:\\Users\\usuario tarde\\Desktop\\cosas con el itellij\\entrada_y_salida\\cosas_de_tienda_online.txt")
     val  escritor_archivos = FileWriter(archivo)
-    for (item in listacompra){
+    var menu = 0
+    while (true){
+        menu = readln()!!.toInt()
+        println("dime que quieres hacer \n 1.- añadir producto \n 2.- modificar producto \n 3.- salir del programa")
+        if (menu == 1){
 
+        }
     }
+
 }
